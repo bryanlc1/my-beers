@@ -4,7 +4,9 @@ import Header from "../components/Header";
 import CardBeer from "../components/CardBeer";
 import { getBeers } from "../services/beers";
 import useBeer from "../hooks/useBeer";
+
 import { Container,Row,Col } from 'react-bootstrap';
+
 export default function Home(){
     const {beers,setBeers,arrayfilteredBeers} = useBeer();
   
@@ -22,8 +24,7 @@ export default function Home(){
         </Col>
       )
     }
-  
-  
+
     return (
       
         <Container>

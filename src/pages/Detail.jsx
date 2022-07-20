@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+
 import { getOneBeer } from '../services/beers';
 
 import { Row, Col } from 'react-bootstrap';
