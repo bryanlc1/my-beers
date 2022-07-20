@@ -18,7 +18,7 @@ function App() {
 
   function createCardsBeers(item, indx) {
     return (
-      <Col>
+      <Col key={indx}>
       <CardBeer key={indx} beer={item} />
       </Col>
     )
