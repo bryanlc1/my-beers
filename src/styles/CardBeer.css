@@ -1,0 +1,12 @@
+.imgCard{
+    padding: 5px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.textCard{
+    overflow: scroll;
+    height: 170px;
+}
+
+.textCard::-webkit-scrollbar {display: none;}
