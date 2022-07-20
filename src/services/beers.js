@@ -4,7 +4,6 @@ export const getBeers = async () => {
     const beers = await fetch('https://api.punkapi.com/v2/beers')
         .then(response => response.json())
         .catch(error => []);
-    console.log('dentroo', beers)
     return beers;
 }
 
@@ -12,6 +11,12 @@ export const filterBeer = async (beerName) => {
     const filteredBeers = await fetch(`https://api.punkapi.com/v2/beers?beer_name=${beerName}`)
         .then(response => response.json())
         .catch(error => []);
-    console.log('dentroo', filteredBeers)
     return filteredBeers;
+}
+
+export const getOneBeer = async (beerId) =>{
+    const oneBeer = await fetch(`https://api.punkapi.com/v2/beers/${beerId}`)
+    .then(response => response.json())
+    .catch(error => []);
+return oneBeer;
 }

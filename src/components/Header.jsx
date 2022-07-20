@@ -23,7 +23,6 @@ export default function Header(){
         }
     },[debounceChange])
     
-    console.log(nameFilterBeer)
     return(
         <Row className="header">
         <Col  xs={{ span: 6, offset: 4 }} lg={{ span: 6, offset: 0}}><h1>Punk APi</h1></Col>
