@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-import Header from "../components/Header";
 import CardBeer from "../components/CardBeer";
 import { getBeers } from "../services/beers";
 import useBeer from "../hooks/useBeer";
@@ -28,7 +27,6 @@ export default function Home(){
     return (
       
         <Container>
-        <Header />
         <Row xs={1} md={4} className="g-4">
           {filteredBeers.length === 0 ?allBeers: filteredBeers}
         </Row>
